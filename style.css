@@ -36,13 +36,13 @@ body {
   min-height: 100vh;
 }
 
-.light-bg{
-    position: absolute;
-    z-index: -10;
-    min-height: 100%;
-    width: 100vw;
-    top: 0;
-    background: var(--light-gradient), var(--neutral-0);
+.light-bg {
+  position: absolute;
+  z-index: -10;
+  min-height: 100%;
+  width: 100vw;
+  top: 0;
+  background: var(--light-gradient), var(--neutral-0);
   background-blend-mode: multiply;
   display: none;
 }
@@ -122,6 +122,13 @@ nav {
   transition: all 0.3s ease;
 }
 
+.active-btn:active {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--red400);
+  outline-offset: 1.3px;
+}
+
 .inactive-btn {
   background-color: var(--neutral-800);
   border: 1px solid var(--neutral-600);
@@ -137,6 +144,13 @@ nav {
 .inactive-btn:hover {
   background-color: var(--neutral-600);
   transition: all 0.3s ease;
+}
+
+.inactive-btn:active {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--red400);
+  outline-offset: 1.3px;
 }
 
 .name {
@@ -447,4 +461,8 @@ section {
   outline-style: solid;
   outline-color: var(--red400);
   outline-offset: 1.3px;
+}
+
+.hidden {
+  display: none;
 }
