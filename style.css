@@ -24,16 +24,27 @@
   --dark-gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
 }
 
-/* === Dark Mode === */
+/* === DARK Mode === */
 
 body {
   font-family: "Noto Sans", sans-serif;
   background: var(--dark-gradient), var(--neutral-300);
+  /* background: var(--light-gradient), var(--neutral-0); */
   background-blend-mode: multiply;
-  color: var(--neutral-0);
   font-size: 16px;
   font-weight: 400;
   min-height: 100vh;
+}
+
+.light-bg{
+    position: absolute;
+    z-index: -10;
+    min-height: 100%;
+    width: 100vw;
+    top: 0;
+    background: var(--light-gradient), var(--neutral-0);
+  background-blend-mode: multiply;
+  display: none;
 }
 
 main {
@@ -43,6 +54,7 @@ main {
 
 h1 {
   font-size: 32px;
+  color: var(--neutral-0);
 }
 
 .logo {
@@ -54,12 +66,20 @@ h1 {
   padding: 10px;
   background-color: var(--neutral-700);
   border-radius: 10px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.mode-btn:hover{
-    background-color: var(--neutral-600);
-    transition: all .3s ease;
+.mode-btn:hover {
+  background-color: var(--neutral-600);
+  transition: all 0.3s ease;
+}
+/* 
+=== active style ==== */
+.mode-btn:active {
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: var(--red400);
+  outline-offset: 1.3px;
 }
 
 nav {
@@ -73,15 +93,15 @@ nav {
   margin: 40px 0;
 }
 
-.three-btns{
-    display: flex;
-gap: 10px;
+.three-btns {
+  display: flex;
+  gap: 10px;
 }
 
-.h1-btns{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.h1-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .active-btn {
@@ -97,9 +117,9 @@ gap: 10px;
   cursor: pointer;
 }
 
-.active-btn:hover{
-    background-color: var(--red500);
-transition: all .3s ease;
+.active-btn:hover {
+  background-color: var(--red500);
+  transition: all 0.3s ease;
 }
 
 .inactive-btn {
@@ -114,14 +134,15 @@ transition: all .3s ease;
   cursor: pointer;
 }
 
-.inactive-btn:hover{
-    background-color: var(--neutral-600);
-    transition: all .3s ease;
+.inactive-btn:hover {
+  background-color: var(--neutral-600);
+  transition: all 0.3s ease;
 }
 
 .name {
   font-size: 20px;
   font-weight: 600;
+  color: var(--neutral-0);
 }
 
 .description {
@@ -139,10 +160,17 @@ transition: all .3s ease;
   cursor: pointer;
 }
 
-.remove-btn:hover{
-    background-color: var(--red400);
-    color: var(--neutral-900);
-    transition: all .3s ease;
+.remove-btn:hover {
+  background-color: var(--red400);
+  color: var(--neutral-900);
+  transition: all 0.3s ease;
+}
+
+.remove-btn:active {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--red400);
+  outline-offset: 1.3px;
 }
 
 .name-desc {
@@ -161,7 +189,7 @@ transition: all .3s ease;
 .circle {
   width: 17px;
   height: 17px;
-  background-color: var(--neutral-100);
+  background-color: var(--neutral-0);
   border-radius: 100px;
 }
 
@@ -177,6 +205,18 @@ transition: all .3s ease;
   cursor: pointer;
 }
 
+.toggle-btn:hover {
+  background-color: var(--red-700);
+  transition: all 0.3s ease;
+}
+
+.toggle-btn:active {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--red400);
+  outline-offset: 1.3px;
+}
+
 .inactive-toggle-btn {
   width: 36px;
   height: 19px;
@@ -186,7 +226,19 @@ transition: all .3s ease;
   justify-content: flex-start;
   align-items: center;
   padding-left: 2px;
-  cursor:pointer;
+  cursor: pointer;
+}
+
+.inactive-toggle-btn:hover {
+  background-color: hsla(226, 11%, 37%, 0.6);
+  transition: all 0.3s ease;
+}
+
+.inactive-toggle-btn:active {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--red400);
+  outline-offset: 1.3px;
 }
 
 .remove-toggle {
@@ -203,9 +255,196 @@ section {
   margin: 32px 0 40px 0;
 }
 
-.card{
-    background-color: var(--neutral-800);
-    padding: 16px;
-    border-radius: 20px;
-     border: 1px solid var(--neutral-600);
+.card {
+  background-color: var(--neutral-800);
+  padding: 16px;
+  border-radius: 20px;
+  border: 1px solid var(--neutral-600);
+}
+
+/* ============= */
+/* === LIGHT Mode === */
+
+.light-h1 {
+  font-size: 32px;
+  color: var(--neutral-900);
+}
+
+.light-nav {
+  background-color: var(--neutral-0);
+  border: 1px solid var(--neutral-100);
+  box-shadow: 1px 1px 2px rgba(47, 47, 47, 0.1);
+  display: none;
+}
+
+.lightmode-btn {
+  display: flex;
+  padding: 10px;
+  background-color: var(--neutral-100);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.lightmode-btn:hover {
+  background-color: hsla(226, 11%, 37%, 0.4);
+  transition: all 0.3s ease;
+}
+
+.lightmode-btn:active {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--red400);
+  outline-offset: 1.3px;
+}
+
+.light-three-btns {
+  display: none;
+  gap: 10px;
+}
+
+.light-active-btn {
+  background-color: var(--red-700);
+  border: none;
+  padding: 10px 20px;
+  font-family: "Noto Sans" sans-serif;
+  font-weight: 500;
+  min-width: 80px;
+  font-size: 18px;
+  border-radius: 100px;
+  color: var(--neutral-0);
+  cursor: pointer;
+}
+
+.light-active-btn:hover {
+  background-color: var(--red400);
+  transition: all 0.3s ease;
+}
+
+.light-active-btn:active {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--red400);
+  outline-offset: 1.3px;
+}
+
+.light-inactive-btn {
+  background-color: var(--neutral-0);
+  border: 1px solid var(--neutral-100);
+  box-shadow: 1px 1px 2px rgba(47, 47, 47, 0.1);
+  padding: 10px 20px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 100px;
+  color: var(--neutral-700);
+  cursor: pointer;
+}
+
+.light-inactive-btn:hover {
+  background-color: hsl(0, 0%, 97%);
+  color: hsla(226, 11%, 37%, 0.7);
+  transition: all 0.3s ease;
+}
+
+.light-inactive-btn:active {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--red400);
+  outline-offset: 1.3px;
+}
+
+.light-card {
+  background-color: var(--neutral-0);
+  border: 1px solid var(--neutral-100);
+  box-shadow: 1px 1px 2px rgba(47, 47, 47, 0.1);
+  padding: 16px;
+  border-radius: 20px;
+}
+
+.light-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--neutral-800);
+}
+
+.light-description {
+  color: var(--neutral-400);
+}
+
+.light-remove-btn {
+  background: none;
+  border: 1px solid hsla(226, 11%, 37%, 0.5);
+  font-family: "Noto Sans", sans-serif;
+  color: var(--neutral-600);
+  padding: 8px 12px;
+  border-radius: 100px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.light-remove-btn:hover {
+  background-color: var(--red-700);
+  color: var(--neutral-0);
+  transition: all 0.3s ease;
+}
+
+.light-remove-btn:active {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--red400);
+  outline-offset: 1.3px;
+}
+
+.light-toggle-btn {
+  width: 36px;
+  height: 19px;
+  background-color: var(--red-700);
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 2px;
+  cursor: pointer;
+}
+
+.light-toggle-btn:hover {
+  background-color: var(--red500);
+}
+
+.light-toggle-btn:active {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--red400);
+  outline-offset: 1.3px;
+}
+
+.inactive-toggle-btn {
+  width: 36px;
+  height: 19px;
+  background-color: var(--neutral-600);
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2px;
+  cursor: pointer;
+}
+
+.light-inactive-toggle-btn {
+  width: 36px;
+  height: 19px;
+  background-color: var(--neutral-300);
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2px;
+  cursor: pointer;
+}
+
+.light-inactive-toggle-btn:active {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--red400);
+  outline-offset: 1.3px;
 }
