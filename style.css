@@ -32,13 +32,15 @@ body {
   background-blend-mode: multiply;
   font-size: 16px;
   font-weight: 400;
-  min-height: 100vh;
+  min-height: 100%;
+
 }
 
 .light-bg {
-  position: absolute;
+  position: fixed;
   z-index: -10;
-  min-height: 100%;
+  min-height: 100vh;
+  height: 100%;
   width: 100vw;
   top: 0;
   background: var(--light-gradient), var(--neutral-0);
@@ -237,7 +239,7 @@ nav {
 .inactive-toggle-btn {
   width: 36px;
   height: 19px;
-  background-color: hsla(226, 11%, 37%, .5);
+  background-color: hsla(226, 11%, 37%, 0.5);
   border-radius: 100px;
   display: flex;
   justify-content: flex-start;
@@ -461,21 +463,21 @@ nav {
   display: none;
 }
 
-@media (max-width: 900px){
-  .container{
+@media (max-width: 900px) {
+  .container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media(max-width: 700px){
-  .h1-btns{
+@media (max-width: 700px) {
+  .h1-btns {
     flex-direction: column;
     gap: 24px;
   }
 }
 
-@media(max-width: 600px){
-  .container{
+@media (max-width: 600px) {
+  .container {
     grid-template-columns: 1fr;
   }
 }
