@@ -30,7 +30,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   background: var(--dark-gradient), var(--neutral-300);
   background-blend-mode: multiply;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   min-height: 100vh;
 
@@ -50,24 +50,24 @@ body {
 
 main {
   width: 90vw;
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 2rem;
   color: var(--neutral-0);
 }
 
 .logo {
-  width: 179px;
+  width: 11.1875rem;
 }
 
 .mode-btn {
   display: flex;
-  padding: 10px;
+  padding: 0.625rem;
   background-color: var(--neutral-700);
-  border-radius: 10px;
+  border-radius: 0.625rem;
   cursor: pointer;
 }
 
@@ -78,10 +78,10 @@ h1 {
 /* 
 === active style ==== */
 .mode-btn:active {
-  outline-width: 1px;
+  outline-width: 0.0625rem;
   outline-style: solid;
   outline-color: var(--red400);
-  outline-offset: 1.3px;
+  outline-offset: 0.0813rem;
 }
 
 nav {
@@ -89,15 +89,15 @@ nav {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding: 16px;
+  padding: 1rem;
   background-color: var(--neutral-800);
-  border-radius: 20px;
-  margin: 40px 0;
+  border-radius: 1.25rem;
+  margin: 2.5rem 0;
 }
 
 .three-btns {
   display: flex;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .h1-btns {
@@ -109,12 +109,12 @@ nav {
 .active-btn {
   background-color: var(--red400);
   border: none;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   font-family: "Noto Sans" sans-serif;
   font-weight: 600;
-  min-width: 100px;
-  font-size: 18px;
-  border-radius: 100px;
+  min-width: 6.25rem;
+  font-size: 1.125rem;
+  border-radius: 6.25rem;
   color: var(--neutral-700);
   text-align: center;
   cursor: pointer;
@@ -126,21 +126,21 @@ nav {
 }
 
 .active-btn:active {
-  outline-width: 2px;
+  outline-width: 0.125rem;
   outline-style: solid;
   outline-color: var(--red400);
-  outline-offset: 1.3px;
+  outline-offset: 0.0813rem;
 }
 
 .inactive-btn {
   background-color: var(--neutral-800);
-  border: 1px solid var(--neutral-600);
-  padding: 10px 20px;
-  min-width: 100px;
+  border: 0.0625rem solid var(--neutral-600);
+  padding: 0.625rem 1.25rem;
+  min-width: 6.25rem;
   font-family: "Noto Sans", sans-serif;
   font-weight: 600;
-  font-size: 18px;
-  border-radius: 100px;
+  font-size: 1.125rem;
+  border-radius: 6.25rem;
   color: var(--neutral-100);
   text-align: center;
   cursor: pointer;
@@ -152,14 +152,14 @@ nav {
 }
 
 .inactive-btn:active {
-  outline-width: 2px;
+  outline-width: 0.125rem;
   outline-style: solid;
   outline-color: var(--red400);
-  outline-offset: 1.3px;
+  outline-offset: 0.0813rem;
 }
 
 .name {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   color: var(--neutral-0);
 }
@@ -170,11 +170,11 @@ nav {
 
 .remove-btn {
   background: none;
-  border: 1px solid var(--neutral-600);
+  border: 0.0625rem solid var(--neutral-600);
   font-family: "Noto Sans", sans-serif;
   color: var(--neutral-100);
-  padding: 8px 12px;
-  border-radius: 100px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6.25rem;
   font-weight: 600;
   cursor: pointer;
 }
@@ -186,41 +186,41 @@ nav {
 }
 
 .remove-btn:active {
-  outline-width: 2px;
+  outline-width: 0.125rem;
   outline-style: solid;
   outline-color: var(--red400);
-  outline-offset: 1.3px;
+  outline-offset: 0.0813rem;
 }
 
 .name-desc {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .img-desc {
   display: flex;
-  gap: 16px;
+  gap: 1rem;
   align-items: flex-start;
-  height: 130px;
+  height: 8.125rem;
 }
 
 .circle {
-  width: 17px;
-  height: 17px;
+  width: 1.0625rem;
+  height: 1.0625rem;
   background-color: var(--neutral-0);
-  border-radius: 100px;
+  border-radius: 6.25rem;
 }
 
 .toggle-btn {
-  width: 36px;
-  height: 19px;
+  width: 2.25rem;
+  height: 1.1875rem;
   background-color: var(--red400);
-  border-radius: 100px;
+  border-radius: 6.25rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 2px;
+  padding-right: 0.125rem;
   cursor: pointer;
 }
 
@@ -230,29 +230,29 @@ nav {
 }
 
 .toggle-btn:active {
-  outline-width: 2px;
+  outline-width: 0.125rem;
   outline-style: solid;
   outline-color: var(--red400);
-  outline-offset: 1.3px;
+  outline-offset: 0.0813rem;
 }
 
 .inactive-toggle-btn {
-  width: 36px;
-  height: 19px;
+  width: 2.25rem;
+  height: 1.1875rem;
   background-color: hsla(226, 11%, 37%, 0.5);
-  border-radius: 100px;
+  border-radius: 6.25rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 2px;
+  padding-left: 0.125rem;
   cursor: pointer;
 }
 
 .inactive-toggle-btn:active {
-  outline-width: 2px;
+  outline-width: 0.125rem;
   outline-style: solid;
   outline-color: var(--red400);
-  outline-offset: 1.3px;
+  outline-offset: 0.0813rem;
 }
 
 .remove-toggle {
@@ -264,31 +264,31 @@ nav {
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px 16px;
-  margin: 32px 0 40px 0;
+  gap: 0.75rem 1rem;
+  margin: 2rem 0 2.5rem 0;
 }
 
 .card {
   background-color: var(--neutral-800);
-  padding: 16px;
-  border-radius: 20px;
-  border: 1px solid var(--neutral-600);
+  padding: 1rem;
+  border-radius: 1.25rem;
+  border: 0.0625rem solid var(--neutral-600);
 }
 
 /* === LIGHT Mode === */
 
 .light-nav {
   background-color: var(--neutral-0);
-  border: 1px solid var(--neutral-100);
-  box-shadow: 1px 1px 2px rgba(47, 47, 47, 0.1);
+  border: 0.0625rem solid var(--neutral-100);
+  box-shadow: 0.0625rem 0.0625rem 0.125rem rgba(47, 47, 47, 0.1);
   display: none;
 }
 
 .darkmode-btn {
   display: flex;
-  padding: 10px;
+  padding: 0.625rem;
   background-color: var(--neutral-100);
-  border-radius: 10px;
+  border-radius: 0.625rem;
   cursor: pointer;
 }
 
@@ -298,26 +298,26 @@ nav {
 }
 
 .darkmode-btn:active {
-  outline-width: 2px;
+  outline-width: 0.125rem;
   outline-style: solid;
   outline-color: var(--red400);
-  outline-offset: 1.3px;
+  outline-offset: 0.0813rem;
 }
 
 .light-three-btns {
   display: none;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .light-active-btn {
   background-color: var(--red-700);
   border: none;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   font-family: "Noto Sans" sans-serif;
   font-weight: 500;
-  min-width: 100px;
-  font-size: 18px;
-  border-radius: 100px;
+  min-width: 6.25rem;
+  font-size: 1.125rem;
+  border-radius: 6.25rem;
   color: var(--neutral-0);
   cursor: pointer;
   text-align: center;
@@ -329,22 +329,22 @@ nav {
 }
 
 .light-active-btn:active {
-  outline-width: 2px;
+  outline-width: 0.125rem;
   outline-style: solid;
   outline-color: var(--red400);
-  outline-offset: 1.3px;
+  outline-offset: 0.0813rem;
 }
 
 .light-inactive-btn {
   background-color: var(--neutral-0);
-  border: 1px solid var(--neutral-100);
-  box-shadow: 1px 1px 2px rgba(47, 47, 47, 0.1);
-  padding: 10px 20px;
+  border: 0.0625rem solid var(--neutral-100);
+  box-shadow: 0.0625rem 0.0625rem 0.125rem rgba(47, 47, 47, 0.1);
+  padding: 0.625rem 1.25rem;
   font-family: "Noto Sans", sans-serif;
   font-weight: 600;
-  min-width: 100px;
-  font-size: 18px;
-  border-radius: 100px;
+  min-width: 6.25rem;
+  font-size: 1.125rem;
+  border-radius: 6.25rem;
   color: var(--neutral-700);
   cursor: pointer;
   text-align: center;
@@ -357,22 +357,22 @@ nav {
 }
 
 .light-inactive-btn:active {
-  outline-width: 2px;
+  outline-width: 0.125rem;
   outline-style: solid;
   outline-color: var(--red400);
-  outline-offset: 1.3px;
+  outline-offset: 0.0813rem;
 }
 
 .light-card {
   background-color: var(--neutral-0);
-  border: 1px solid var(--neutral-100);
-  box-shadow: 1px 1px 2px rgba(47, 47, 47, 0.1);
-  padding: 16px;
-  border-radius: 20px;
+  border: 0.0625rem solid var(--neutral-100);
+  box-shadow: 0.0625rem 0.0625rem 0.125rem rgba(47, 47, 47, 0.1);
+  padding: 1rem;
+  border-radius: 1.25rem;
 }
 
 .light-name {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   color: var(--neutral-800);
 }
@@ -383,11 +383,11 @@ nav {
 
 /* .light-remove-btn {
   background: none;
-  border: 1px solid hsla(226, 11%, 37%, 0.5);
+  border: 0.0625rem solid hsla(226, 11%, 37%, 0.5);
   font-family: "Noto Sans", sans-serif;
   color: var(--neutral-600);
-  padding: 8px 12px;
-  border-radius: 100px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6.25rem;
   font-weight: 600;
   cursor: pointer;
 }
@@ -399,21 +399,21 @@ nav {
 }
 
 .light-remove-btn:active {
-  outline-width: 2px;
+  outline-width: 0.125rem;
   outline-style: solid;
   outline-color: var(--red400);
-  outline-offset: 1.3px;
+  outline-offset: 0.0813rem;
 } */
 
 /* .light-toggle-btn {
-  width: 36px;
-  height: 19px;
+  width: 2.25rem;
+  height: 1.1875rem;
   background-color: var(--red-700);
-  border-radius: 100px;
+  border-radius: 6.25rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 2px;
+  padding-right: 0.125rem;
   cursor: pointer;
 }
 
@@ -422,61 +422,61 @@ nav {
 }
 
 .light-toggle-btn:active {
-  outline-width: 2px;
+  outline-width: 0.125rem;
   outline-style: solid;
   outline-color: var(--red400);
-  outline-offset: 1.3px;
+  outline-offset: 0.0813rem;
 } */
 
 /* .inactive-toggle-btn {
-  width: 36px;
-  height: 19px;
+  width: 2.25rem;
+  height: 1.1875rem;
   background-color: var(--neutral-600);
-  border-radius: 100px;
+  border-radius: 6.25rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 2px;
+  padding-left: 0.125rem;
   cursor: pointer;
 } */
 
 /* .light-inactive-toggle-btn {
-  width: 36px;
-  height: 19px;
+  width: 2.25rem;
+  height: 1.1875rem;
   background-color: var(--neutral-300);
-  border-radius: 100px;
+  border-radius: 6.25rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 2px;
+  padding-left: 0.125rem;
   cursor: pointer;
 }
 
 .light-inactive-toggle-btn:active {
-  outline-width: 2px;
+  outline-width: 0.125rem;
   outline-style: solid;
   outline-color: var(--red400);
-  outline-offset: 1.3px;
+  outline-offset: 0.0813rem;
 } */
 
 .hidden {
   display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 56.25rem) {
   .container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 43.75rem) {
   .h1-btns {
     flex-direction: column;
-    gap: 24px;
+    gap: 1.5rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
   .container {
     grid-template-columns: 1fr;
   }
