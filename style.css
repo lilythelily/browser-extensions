@@ -32,7 +32,7 @@ body {
   background-blend-mode: multiply;
   font-size: 16px;
   font-weight: 400;
-  min-height: 100%;
+  min-height: 100vh;
 
 }
 
